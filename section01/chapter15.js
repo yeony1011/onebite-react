@@ -18,14 +18,14 @@ let name = person.name;
 console.log(name); // 조승연
 
 let name2 = person.name2;
-console.log(name2); // undefined
+console.log(name2); // 객체에 없는 키값에 접근하면, undefined
 
 let age = person['age']; // key를 따옴표를 포함해 문자열처럼 작성해야함
-// let age = person["age"];
+// let age = person["age"]; // 홑,쌍 다 됨
 console.log(age);
 
 let age2 = person['age2'];
-console.log(age2); // undefined
+console.log(age2); // 객체에 없는 키값에 접근하면, undefined
 
 // 접근하고자 하는 키값을 변수에 담아서 프로퍼티를 꺼낼때
 // 동적인 작업이 필요한 경우, 괄호 표기법 사용하고 그렇지 않으면 일반적으로 점 표기법 사용!

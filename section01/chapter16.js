@@ -10,12 +10,12 @@ animal.age = 2; // 추가
 animal.name = "까망이"; // 수정
 delete animal.color; // 삭제
 
-// animal = 12; // 불가
+// animal = 12; // 자료형이 바뀌므로 불가
 
 
 // 2. 메서드
 // -> 값이 함수인 프로퍼티를 말함
-const person = {}
+const person = {
   name : "조승연", // 일반적인 프로퍼티들은 객체의 정보를 담고 있음
   // 메서드 : 함수프로퍼티들은 메서드 형식으로 객체의 동작을 담고 있음
   sayHi : function(){ // 익명함수
@@ -29,7 +29,6 @@ const person = {}
   // sayHi() {
   //   console.log('안녕');
   // }
-  
-;
+};
 person.sayHi(); // 함수라 호출 가능 // 안녕
 // person["sayHi"]();
