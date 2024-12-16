@@ -17,6 +17,7 @@ if(num >= 10){ // 조건문
 // 2. switch 조건문
 // -> if문과 기능 동일
 // -> 다수의 조건을 처리할때 if문 보다 직관적
+// -> case문에 중괄호 생략 가능
 
 let animal = 'cat';
 switch(animal){

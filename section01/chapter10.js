@@ -11,7 +11,7 @@ for(let idx=0 ; idx < 10; idx++){
   // console.log('반복!');
   console.log(idx);
 
-  // 조건식을 수정하지 못할때, 강제로 중간에 종료해야할때 조건식+break 사용 할 수 있음
+  // 반복문 안의 조건식을 수정하지 못할때, 강제로 중간에 종료해야할때 조건식+break 사용 할 수 있음
   if(idx >= 5){
     break;
   }
