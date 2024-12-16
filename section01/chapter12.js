@@ -1,22 +1,20 @@
 // 함수표현식
 
-// 1. 일반적인 함수선언 (호이스팅 됨)
+// 1. 일반적인 함수선언 (⭐️호이스팅 됨)
 function funcA(){
   console.log('funcA');
-  
 }
 
-let varA = funcA;
+let varA = funcA; // 함수를 변수에 담음
 console.log(varA); // 함수 자체가 출력됨
 varA(); // 함수가 변수에 담겨져 함수의 값이 출력됨
 
-// 2. 함수표현식 (호이스팅 되지 않음)
+// 2. 함수표현식 (⭐️호이스팅 되지 않음)
 let varB = function funcB(){
   console.log('funcB');
-  
 }
 varB();
-// 단, funcB는 선언식이 아니라, varB의 값으로 들어간 케이스임.
+// 단, funcB는 선언식이 아니라, varB의 값으로 들어간 케이스임. (⭐️)
 // funcB()를 호출했을때, 정의되지 않았다고 에러뜸 (not defined)
 
 // 해서, 처음 함수를 만들때 이름을 생략해도 무방함!!!
