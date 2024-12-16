@@ -1,4 +1,4 @@
-// 자료형(Data Type)
+// 자료형(Data Type) : 원시타입, 객체타입
 
 // ᄂ 원시타입 (기본형타입)
 // ᄂᄂ Number (모듈러 연산 가능)
@@ -29,7 +29,7 @@ let myName = '이정환';
 let myLocation = '목동';
 let introduce = myName + myLocation;
 
-let introduceText = `${myName}은 ${myLocation}에 거주합니다.`;
+let introduceText = `${myName}은 ${myLocation}에 거주합니다.`; // 템플릿 리터럴
 
 // 3. Boolean
 let isSwitchOn = true;
