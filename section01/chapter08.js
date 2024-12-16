@@ -1,4 +1,4 @@
-// 1. null 병합 연산자 ( ?? )
+// 1. null 병합 연산자 ( 표현식 : ?? )
 // -> 존재하는 값을 추려내는 기능
 // -> null, undefined가 아닌 값을 찾아내는 연산자
 
@@ -34,7 +34,7 @@ console.log(displayName); // yeony
 
 let var7 = 1;
 var7 = "hello";
-// 다른언어와 다르게, 자바스크립트는 하나의 변수에 자료형이 다른 값이 적용됨
+// 다른언어와 다르게, 자바스크립트는 하나의 변수에 다른 자료형의 값이 적용됨
 
 let t1 = typeof var7;
 console.log(t1); // String

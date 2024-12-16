@@ -52,4 +52,4 @@ let comp3 = 1 == "1"; // true
 let comp4_1 = 2 > 1; // true
 let comp4_2 = 2 < 1; // false
 let comp4_3 = 2 >= 1; // true
-let comp4_4 = 2 <= 1; // true
+let comp4_4 = 2 <= 1; // false
