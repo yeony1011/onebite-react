@@ -1,7 +1,7 @@
 // 반복문으로 배열과 객체 순회하기
 // 순회 : 배열, 객체에 저장된 여러개의 값에 순서대로 하나씩 접근하는 것
 // ⭐️ 배열 순회 : for of
-// ⭐️ 객체 순회 : for in
+// ⭐️ 객체 순회 : for in ( chapter15 참고 )
 
 // 1. 배열 순회
 // 1.1 배열 인덱스
@@ -47,7 +47,7 @@ for(let key of keys){
 }
 
 // 2.2 Object.values() 사용 ( 내장함수임 )
-// -> 객체에서 value 값들만 뽑아서 새로운 배열로 반환
+// -> 객체에서 value 값들만 뽑아서 새로운 "배열"로 반환
 let values = Object.values(person);
 // console.log(values); // [ 'yeony', 20, 'run' ]
 for(let i = 0; i < values.length; i++){
