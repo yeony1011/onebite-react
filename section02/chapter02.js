@@ -36,7 +36,7 @@ function returnTure2(){
   console.log("True 함수");
   return 10;
 }
-console.log(returnTure2() || returnFalse2()); // True 함수, 10 ( Truthy한 값으로, ture가 아닌 Truthy한 값을 노출함 )
+console.log(returnTure2() || returnFalse2()); // True 함수, 10 ( Truthy한 값으로, ture가 아닌 Truthy한 값을 노출함(⭐️) )
 console.log(returnFalse2() && returnTure2()); // False 함수, undefined
 
 
@@ -52,7 +52,7 @@ printName(); // person의 값이 없음
 printName({name: "조승연"}); // 조승연
 
 
-// [⭐️ 정리]
+// [⭐️ 정리 : 단락평가 Truty & Falsy]
 // T || T -> 첫번째 T값 노출
 // T && T -> 두번째 T값 노출
 
