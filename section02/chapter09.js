@@ -18,6 +18,7 @@ console.log(tennisPeople); // [{name: "yeony", hobby: "테니스"}, {name: "조�
 
 // 2. map
 // 배열의 모든 요소를 순회하면서, 각각 콜백함수를 실행하고 그 결과값들을 모아서새로운 배열로 반환
+// 원본배열은 수정되지 않음
 
 let arr2 = [1, 2, 3];
 const mapResult1 = arr2.map((item, idx, arr) => {
@@ -50,6 +51,9 @@ arr3_2.sort((a, b) => {  // 오름차순 정렬
     return 0; // a,b 자리를 그대로 유지
   }
 });
+
+// arr3_2.sort(() => a - b); // 오름차순 정렬
+
 // arr3_2.sort((a, b) => {  // 내림차순 정렬
 //   if(a > b){
 //     // a가 b 앞에 와라

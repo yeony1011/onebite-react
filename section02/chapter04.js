@@ -7,7 +7,7 @@
 // 배열에서 스프레드 연산자
 const arrA = [1, 2, 3];
 const arrB = [4, 5, 6];
-// const arrC = [4, arr[0], arr[1], arr[2], 5, 6]; // 위험, 복잡
+// const arrC = [4, arrA[0], arrA[1], arrA[2], 5, 6]; // 위험, 복잡
 const arrC = [4, ...arrA, 5, 6];
 console.log(arrC);
 

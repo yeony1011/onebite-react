@@ -2,6 +2,7 @@
 
 // 1. forEach
 // 배열의 모든 요소를 순회하면서, 각각의 요소에 특정 동작을 수행시키는 메서드
+// return을 해도 undefined만 반환되며, 콜백함수의 실행 흐름에만 영향을 미치고, 메서드의 반환 값에는 영향주지 않음!
 
 let arr1 = [1, 2, 3];
 arr1.forEach(function(item, idx, arr){
@@ -66,7 +67,7 @@ const findIndex2 = arr4.findIndex((item) => {
 });
 // const findIndex2 = arr4.findIndex((item) => item % 2 !== 0); // 위 식과 같은 내용. 바로 조건식을 반환값으로 사용
 // const findIndex2 = arr4.findIndex((item) => item === 999); // 조건에 맞지 않으면 -1 반환
-console.log(findIndex2); // 0
+console.log(findIndex2); // 0 // indexOf처럼 가장 첫번째 인덱스를 반환
 
 
 // 5. find
@@ -75,5 +76,5 @@ let arr5 = [
   {name: "조승연"}, 
   {name: "yeony"}
 ];
-const finded =arr5.find((item) => item.name === "yeony");
+const finded = arr5.find((item) => item.name === "yeony");
 console.log(finded); // {name: "yeony"}

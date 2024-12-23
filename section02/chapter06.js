@@ -61,3 +61,6 @@ for(let value of values){
 for(let key in person){
   console.log(key, person[key]);
 }
+for(let value in person){
+  console.log(value);
+}
