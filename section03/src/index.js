@@ -15,3 +15,10 @@ import { add, sub } from "./math.js"; // (⭐️)확장자까지 명시!!
 console.log(add(1, 2));
 console.log(sub(1, 2));
 
+
+// randomcolor 라이브러리 불러오기
+import randomColor from "randomcolor"; // 라이브러리는 파일위치가 아니라, 라이브러리명만 불러오기
+
+const color = randomColor();
+console.log(color);
+
