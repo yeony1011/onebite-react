@@ -9,13 +9,14 @@ export function sub(a, b){
 }
 
 // CommonJS 모듈 표현식
-// 함수모듈을 내보내기
+// 함수모듈을 내보내기 : module.exports 객체 안에 내보내고싶은 값들을 넣으면 됨 
+// add라는 프로퍼티에 value로 add함수를 넣음
 // module.exports = {
 //   add: add,
 //   sub: sub
 // }
 
-// 프로퍼티와 밸류값이 동일한 경우, 한번만 사용해도 가능
+// 프로퍼티와 밸류값이 동일한 경우, 한번만 사용해도 가능 (⭐️)
 // module.exports = {
 //   add,
 //   sub

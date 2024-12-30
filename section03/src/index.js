@@ -11,6 +11,7 @@ import { add, sub } from "./math.js"; // (⭐️)확장자까지 명시!!
 
 // console.log(moduleData);
 
+// 객체구조분해 할당 방법!
 // const {add, sub} = require("./math"); // 동일코드
 console.log(add(1, 2));
 console.log(sub(1, 2));
