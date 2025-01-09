@@ -1,5 +1,7 @@
 import './App.css'
 import { useState } from 'react' // 리액트가 제공하는 내장 함수 사용
+import Bulb from './components/Bulb'
+import Counter from './components/Counter'
 
 function App() {
   // const state = useState(); // useState()함수를 호출해서 state변수에 저장
@@ -16,23 +18,12 @@ function App() {
   //   </>
   // )
 
-  const [count, setCount] = useState(0);
-  const [light, setLight] = useState('OFF');
+  
   
   return (
     <>
-    <div>
-      <h1>{light}</h1>
-      <button onClick={()=> {
-        setLight(light === 'OFF' ? 'ON' : 'OFF')
-      }}>전구 {light == 'OFF' ? '켜기' : '끄기'}</button>
-    </div>
-      <div>
-        <h1>{count}</h1>
-        <button onClick={()=>{
-          setCount(count + 1)
-        }}>+</button>
-      </div>
+      <Bulb />
+      <Counter />
     </>
   )
 }
@@ -45,3 +36,11 @@ export default App
 // 여러개의 state 만드는 것 가능
 
 // 컴포넌트의 값이 변화 -> return문을 다시 렌더링 => 리렌더링
+
+
+// 리렌더링 발생되는 세가지 상황
+// 1. 자신이 관리하는 state 값이 변경될 때
+// 2. 제공받는 props의 값이 변경될 때
+// 3. 부모 컴포넌트가 리렌더링될 때
+// -> 불필요한 리렌더링은 성정 저하의 원인
+// -> 방지하기 위해, 관련없는 state는 같은 컴포넌트에 넣지 않고, 각각의 컴포넌트를 사용!
