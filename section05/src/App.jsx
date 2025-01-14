@@ -3,6 +3,7 @@ import './App.css'
 // import Bulb from './components/Bulb'
 // import Counter from './components/Counter'
 import Register from './components/Register'
+import HookExam from './components/HookExam'
 
 function App() {
   // const state = useState(); // useState()함수를 호출해서 state변수에 저장
@@ -25,7 +26,8 @@ function App() {
     <>
       {/* <Bulb /> */}
       {/* <Counter /> */}
-      <Register />
+      {/* <Register /> */}
+      <HookExam />
     </>
   )
 }
