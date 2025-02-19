@@ -6,6 +6,7 @@ const TodoItem = ({id, isDone, content, date, onUpdate, onDelete}) => {
     onUpdate(id);
   }
 
+
   const onClickDelete = () => {
     onDelete(id);
   }
