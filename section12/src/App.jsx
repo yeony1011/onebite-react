@@ -97,33 +97,33 @@ function App() {
         
       }} />
 
-      <Button text={'123'} type={'pasitive'} onClick={()=>{
+      <Button text={'123'} type={'POSITIVE'} onClick={()=>{
         console.log('123번 버튼 클릭');
         
       }} />
 
-      <Button text={'123'} type={'nagative'} onClick={()=>{
+      <Button text={'123'} type={'NEGATIVE'} onClick={()=>{
         console.log('123번 버튼 클릭');
         
       }} /> */}
 
-      <button onClick={()=>{
+      {/* <button onClick={()=>{
         onCreate(new Date().getTime(), 1, "Hello");
       }}>
         일기 추가 테스트
-      </button>
+      </button> */}
 
-      <button onClick={()=>{
+      {/* <button onClick={()=>{
         onUpdate(1, new Date().getTime(), 3, "수정된 일기입니다");
       }}>
         일기 수정 테스트
-      </button>
+      </button> */}
 
-      <button onClick={()=>{
+      {/* <button onClick={()=>{
         onDelete(1);
       }}>
         일기 삭제 테스트
-      </button>
+      </button> */}
 
       <DiaryStateContext.Provider value={data}>
         <DiaryDispatchContext.Provider value={{
